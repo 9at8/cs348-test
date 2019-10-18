@@ -35,10 +35,10 @@ TO_INSERT = [
 
 
 def item_to_value(item):
-    if isinstance(item, int):
-        return str(item)
+    if isinstance(item, str):
+        return f"'{item}'"
 
-    return f"'{item}'"
+    return str(item)
 
 
 def row_to_value(e):
